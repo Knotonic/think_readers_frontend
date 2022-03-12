@@ -1,3 +1,4 @@
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,10 +8,13 @@ module.exports = {
     fontFamily: {
       'body':['Poppins']
     },
+  
     colors: {
-      'primary': '#7C9473',
+      'primary': '#ED553B',
       'secondary': '#3B3B3B',
       'white': '#FFFFFF',
+      "inputbg":"#F2F3F7",
+      "fontblack":"#444343"
      
     },
     screens: {
@@ -21,7 +25,12 @@ module.exports = {
       'desktop': '1280px',
     
     },
-    extend: {},
+    backgroundImage: {
+   
+      'background-pattern': "url('~/assets/bg.png')",
+      'top-logo': "url('~/assets/logo1.svg')",
+    },
+  
   },
   plugins: [],
 }
