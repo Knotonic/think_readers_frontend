@@ -9,7 +9,7 @@ import google from "../assets/google.svg";
 import SizedBox from "../components/sizeBox";
 import NormalButton from "../components/normalButton";
 import RowButton from "../components/rowButton";
-
+import Image from "next/image";
 const signUp = () => {
 
   return (
@@ -51,7 +51,7 @@ const signUp = () => {
             />
           </div>
           <div>
-            <button type="submit" className="h-14 w-14 rounded-full bg-primary m-auto "> <img src={arrow.src} alt="arrow" className="h-5 w-5 text-center m-auto" /></button>
+            <button type="submit" className="h-14 w-14 rounded-full bg-primary m-auto "> <Image src={arrow.src} alt="arrow" height={20} width={20} className="text-center m-auto" /></button>
           </div>
 
         </Form>

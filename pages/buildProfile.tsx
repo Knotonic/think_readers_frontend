@@ -6,7 +6,7 @@ import MyTextInput from "../components/input";
 import camaraIcon from "../assets/cameraIcon.svg";
 import SizedBox from "../components/sizeBox";
 import NormalButton from "../components/normalButton";
-
+import Image from "next/image";
 
 const buildProfile = () => {
 
@@ -42,7 +42,10 @@ const buildProfile = () => {
                     <div className="w-10/12">
                         <div>
                             <div className="bg-secondary h-28 w-28 m-auto rounded-full relative">
-                                <img src={camaraIcon.src} alt="Icons" className="absolute bottom-0 right-2 h-10 w-10" />
+                                <div className="absolute bottom-0 right-2 ">
+                                <Image src={camaraIcon.src} alt="Icons" height={40} width={40}   />
+                                </div>
+                               
                             </div>
                         </div>
 
